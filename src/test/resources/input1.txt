@@ -1,0 +1,1 @@
+key:U of M, university:U of M, main-campus:Minneapolis, studentCount:49000, campuses:Minneapolis|Duluth|Morris|Crookston

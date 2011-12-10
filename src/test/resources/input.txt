@@ -1,0 +1,4 @@
+key:Rackspace, office:Rackspace, employeeCount:3900, offices:San Antonio|Austin|Blacksburg
+key:Austin, office:Austin, employeeCount:390
+key:Blacksburg, office: Blacksburg, employeeCount:100
+key:Google, office:MountainView, employeeCount:10000, offices:USA|India|England
