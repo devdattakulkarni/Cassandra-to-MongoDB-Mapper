@@ -1,1 +1,5 @@
 Cassandra to MongoDB Mapper
+----------------------------
+
+A mapper library that reads the data stored in a Cassandra cluster
+and stores it into MongoDB database.
