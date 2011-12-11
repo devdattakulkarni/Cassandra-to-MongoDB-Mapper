@@ -1,1 +1,2 @@
 key:U of M, university:U of M, main-campus:Minneapolis, studentCount:49000, campuses:Minneapolis|Duluth|Morris|Crookston
+key:U T, university:U T, main-campus:Austin, studentCount:35000, campuses:Austin|Dallas|Arlington

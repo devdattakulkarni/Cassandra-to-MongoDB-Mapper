@@ -27,11 +27,13 @@ public class CassandraClientTest {
         cassandraClient = new CassandraClient(props);
 
         List<String> input = new ArrayList<String>();
-        input.add("key:HackerNews, office:MountainView, employeeCount:10");
+        input.add("key:India, Country:India, Currency:Rupee");
+        input.add("key:USA, Country:USA, Currency:Dollar");
         cassandraClient.write(input);
         List<String> output = cassandraClient.read();
         System.out.println("--- Data Read Back ---");
-        System.out.println(output);
-        
+        for (int i = 0; i < output.size(); i++) {
+            System.out.println(output.get(i));
+        }
     }
 }

@@ -118,6 +118,7 @@ public class CassandraClient implements Writer, Reader {
             ColumnQuery<String, String, String> columnQuery = HFactory
                 .createStringColumnQuery(ksp);
 
+            StringBuilder row = new StringBuilder();
             for (int i = 0; i < columnNamesList.size(); i++) {
                 columnQuery.setColumnFamily(columnFamily).setKey(key).setName(
                     columnNamesList.get(i));
@@ -126,12 +127,13 @@ public class CassandraClient implements Writer, Reader {
                     .execute();
 
                 HColumn<String, String> cols = result.get();
+
                 if (cols != null) {
                     System.out.print(cols.getName() + ":" + cols.getValue());
-                    data.add(cols.getName() + ":" + cols.getValue());
+                    row.append(cols.getName() + ":" + cols.getValue() + ",");
                 }
             }
-            System.out.println();
+            data.add(row.toString());
         }
         return data;
     }

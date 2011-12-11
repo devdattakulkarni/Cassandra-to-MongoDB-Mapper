@@ -31,7 +31,7 @@ public class CassandraToMongoTest {
         props.setProperty("host", "localhost");
         props.setProperty("port", "27017");
         props.setProperty("db", "mydb");
-        props.setProperty("collection", "DevdattaStandard3");
+        props.setProperty("collection", "DevdattaStandard5");
 
         cassandra = new CassandraClient(props);
         mongo = new MongoDBClient(props);
@@ -47,6 +47,8 @@ public class CassandraToMongoTest {
         List<String> output = mongo.read();
 
         System.out.println("===== Data got back from Mongo ======");
-        System.out.println(output);
+        for (int i = 0; i < output.size(); i++) {
+            System.out.println(output.get(i));
+        }
     }
 }
