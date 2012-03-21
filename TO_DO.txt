@@ -1,0 +1,10 @@
+TODO
+----
+
+1) Currently Cassandra server and Mongo db servers need to be started initially and separately.
+   Change the project configuration such that these servers are started as part of launching the project.
+   
+2) Modify tests, such that each time appropriate data is populated in the data stores and then removed
+   after the testing is done.
+   
+

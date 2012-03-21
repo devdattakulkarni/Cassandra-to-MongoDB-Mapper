@@ -12,6 +12,16 @@
 			<artifactId>hector-core</artifactId>
 			<version>0.8.0-2</version>
 		</dependency>
+		
+		<dependency>
+			<groupId>mongodbjar</groupId>
+			<artifactId>mongodbjar</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/lib/mongo-2.7.2.jar
+                    </systemPath>
+		</dependency>
+		
 	</dependencies>
 
 </project>

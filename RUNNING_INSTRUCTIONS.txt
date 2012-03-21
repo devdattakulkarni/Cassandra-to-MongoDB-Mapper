@@ -1,0 +1,5 @@
+1) Download MongoDB
+2) Run the MongoDB database server process
+   ./bin/mongod
+   - This will start the mongod database server process which will start listening
+     on port 27017
